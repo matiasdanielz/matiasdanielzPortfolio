@@ -1,0 +1,368 @@
+.nav-link {
+    transition: all 0.2s;
+    position: relative;
+    margin-right: 5px;
+    font-weight: bold;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #00baff;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+}
+
+.curriculum-nav {
+    margin-left: 20px;
+    color: #00baff;
+}
+
+#home {
+    position: initial;
+    z-index: 1;
+}
+
+html,body{
+    overflow-x: hidden;
+}
+
+
+.AboutMe {
+    padding-top: 80px;
+    position: relative;
+    height: auto;
+    min-height: 600px;
+    height: 600px;
+    width: 100%;
+    background-image: linear-gradient(#000000, #090909);
+}
+
+section{
+    position: relative;
+    height: min-content;
+    justify-content: center;
+    min-height: 650px;
+    width: 100%;
+    background-image: linear-gradient(#090909, #000000);
+    border-top: 1px solid #3c3c3c;
+}
+
+.projectItem {
+    justify-content: start;
+    flex: content;
+    align-items: left;
+    padding-inline: 30px;
+    min-width: 33%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.information {
+    padding-top: 20px;
+}
+
+button {
+    position: relative;
+    border-radius: 10px;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: center;
+    border-color: transparent;
+}
+
+.social-media-buttons {
+    flex-direction: row;
+    display: flex;
+    width: 100%;
+    padding-top: 70px;
+    justify-content: space-evenly;
+}
+
+.linkedin-button {
+    background-color: #0E76A8;
+    color: white;
+}
+
+.github-button {
+    background: #2a2a2a;
+    color: white;
+}
+
+i{
+    width: 100%;
+    padding-right: 15px;
+    height: 100%;
+    position: relative;
+}
+
+.listProjects {
+    flex-direction: row;
+    align-items: left;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+    justify-content: center;
+}
+
+.projectPhoto {
+    width: 100%;
+    max-width: 100%;
+    height: 200px;
+    max-height: 200px;
+}
+
+.steppersItem{
+    background-color: transparent;
+    outline-color: transparent;
+    border-color: transparent;
+    position: relative;
+    margin-top: 30px;
+    font-size: 20px;
+    color: #cfd1d2;
+}
+
+.active-step:after {
+    content: "";
+    height: 45px;
+    background: #00baff;
+    width: 04px;
+    display: flex;
+    border-radius: 10px;
+    position: absolute;
+    bottom: -08px;
+    left: -12px;
+}
+
+.wrap-left {
+    max-width: 40%;
+    align-items: center;
+    float: left;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap-right {
+    max-width: 60%;
+    align-items: left;
+    float: right;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.name {
+    color: #00baff;
+}
+
+.title{
+    color: #fff;
+}
+
+.subtitle{
+    color: #7b7b7b;
+}
+
+.emailContent {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    padding-top: 25px;
+}
+
+.userPhoto {
+    width: 250px;
+    height: 250px;
+    border-radius: 10%;
+}
+
+.projectPhoto {
+    padding-bottom: 25px;
+    border-radius: 15px;
+}
+
+.section-title {
+    color: #cfd1d2;
+    font-size: 34px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.section-title:after {
+    content: "";
+    height: 1px;
+    background: #00baff;
+    width: 200px;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+p {
+    padding-top: 10px;
+    color: #c0bfbf;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+@media(max-width: 600px){
+    .navbar-brand{
+        font-size: 16px;
+    }
+
+    .AboutMe {
+        padding-top: 40px;
+        justify-content: center;
+        position: relative;
+        height: auto;
+        min-height: 750px;
+        height: 750px;
+        width: 100%;
+        background-image: linear-gradient(#000000, #090909);
+    }
+
+    .wrap-left {
+        max-width: 100%;
+        align-items: left;
+        margin-top: 25px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+    }
+    
+    .wrap-right {
+        max-width: 100%;
+        align-items: center;
+        margin-top: 40px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .name {
+        color: #00baff;
+        font-size: 18px;
+    }
+    
+    .title{
+        color: #fff;
+        font-size: 20px;
+    }
+    
+    .subtitle{
+        color: #7b7b7b;
+        font-size: 18px;
+    }
+
+    section{
+        position: relative;
+        height: min-content;
+        justify-content: center;
+        min-height: 1000px;
+        width: 100%;
+        background-image: linear-gradient(#090909, #000000);
+    }
+
+    .contact-section{
+        position: relative;
+        height: min-content;
+        justify-content: center;
+        min-height: 450px;
+        width: 100%;
+        background-image: linear-gradient(#090909, #000000);
+    }
+
+    .userPhoto {
+        width: 60px;
+        height: 60px;
+        border-radius: 10%;
+    }
+    
+    .information{
+        padding-left: 10px;
+    }
+
+    .section-title {
+        color: #cfd1d2;
+        font-size: 34px;
+        margin-top: 20px;
+        margin-bottom: 0px;
+        text-align: center;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    p {
+        padding-top: 10px;
+        color: #c0bfbf;
+        font-size: 14px;
+        line-height: 30px;
+    }
+
+    button {
+        position: relative;
+        border-radius: 5%;
+        padding: 15px 30px;
+        height: 45px;
+        width: 125px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        font-weight: bold;
+        justify-content: space-evenly;
+        border-color: transparent;
+    }
+
+    .social-media-buttons {
+        flex-direction: row;
+        width: 100%;
+        padding-top: 40px;
+        justify-content: space-around;
+    }
+    
+    .linkedin-button {
+        background-color: #0E76A8;
+        color: white;
+    }
+    
+    .github-button {
+        background: #2a2a2a;
+        color: white;
+    }
+
+    .listProjects {
+        flex-direction: column;
+        align-items: left;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        padding-top: 20px;
+        justify-content: center;
+    }
+
+    .projectItem {
+        justify-content: left;
+        flex: content;
+        align-items: left;
+        min-width: 33%;
+        flex-direction: column;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        justify-content: space-between;
+    }
+}

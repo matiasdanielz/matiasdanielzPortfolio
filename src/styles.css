@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+:root {
+    --color-primary: #00baff;
+    --color-secondary: #146f90;
+    --color-hover: #146f90;
+    --color-pressed: #146f90;
+    --outline-color-focused: #146f90;
+}
+

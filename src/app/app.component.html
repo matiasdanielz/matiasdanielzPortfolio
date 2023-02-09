@@ -1,0 +1,232 @@
+<body>
+  <header>
+    <nav class="navbar fixed-top navbar-expand-sm navbar-dark bg-dark">
+      <div class="container">
+        <a href="#" class="navbar-brand mb-0 h1">
+          Daniel Matias
+        </a>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">
+                Sobre mim
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#experience" class="nav-link">
+                Experiencia
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="/#projects" class="nav-link">
+                Projetos
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">
+                Contato
+              </a>
+            </li>
+          </ul>
+        </div>
+        <a href="#" type="button" (click)="downloadPdf()" class="nav-link curriculum-nav">
+          Baixar Curriculo
+        </a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section class="AboutMe" id="home">
+      <div class="container">
+        <h1 class="section-title">Sobre mim</h1>
+        <div class="wrap-left">
+          <div>
+            <img
+              src="https://media.licdn.com/dms/image/D4D03AQERzk-U7l3iPw/profile-displayphoto-shrink_200_200/0/1649601196336?e=1678924800&v=beta&t=dNDy-KNCf4lMY6tT_qS_SCsGPB8RQZYhW59F1LjU1Fk"
+              class="userPhoto">
+          </div>
+          <div class="information">
+            <h2 class="title">
+              Olá, eu sou <span class="name"> Daniel Matias</span>
+            </h2>
+            <h2 class="subtitle">
+              Software Developer
+            </h2>
+          </div>
+        </div>
+        <div class="wrap-right">
+          <p>
+            Atuo na area de desenvolvimento de software há 04 anos, comecei na area programando jogos mobile,
+            possuo
+            alguns titulos de destaque publicados na Play store, os quais alcançaram mais de 150 pessoas em 20
+            paises
+            diferentes.
+            <br>
+            <br>
+            No ano de 2022 consegui um emprego que me possibilitou realizar tarefas na area de TI, como
+            desenvolver
+            aplicativos mobile com Flutter e manuseio de banco de dados com os frameworks Memento e Grafana.
+            <br>
+            <br>
+            Atualmente sou desenvolvedor na TOTVS RS, entregando novas funcionalidades e funções ao sistema ERP
+            Protheus, utilizando linguagens como ANGULAR, JAVASCRIPT, ADVPL, SQL.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section id="experience">
+      <header>
+        <h1 class="section-title">Experiencia</h1>
+      </header>
+      <div class="container experience-sides">
+        <div class=" experience-web">
+          <div class="wrap-left">
+            <div class="btn-group-vertical">
+              <button class="steppersItem" [ngClass]="activeStep == 1 ? 'active-step' : ''"
+                (click)="clickEvent(1)">Totvs</button>
+              <button class="steppersItem" [ngClass]="activeStep == 2 ? 'active-step' : ''"
+                (click)="clickEvent(2)">Apollo
+                Gestão</button>
+              <button class="steppersItem" [ngClass]="activeStep == 3 ? 'active-step' : ''"
+                (click)="clickEvent(3)">Godman
+                Studios</button>
+            </div>
+          </div>
+          <div class="wrap-right">
+            <div>
+              <div name="subtitle" *ngIf="activeStep == 1">
+                <h4 class="title">Totvs</h4>
+                <p>
+                  Minha primeira oportunidade de começar na área de desenvolvimento de software em tempo integral, tendo
+                  como objetivo inicial a criação e melhorias para o sistema ERP Protheus.
+                  <br>
+                  - Gestão e desenvolvimento de apis, utilIizando-se o software Postman, entre outros.
+                  <br>
+                  - Versionamento de códigos fontes com git, github e gitlab.
+                  <br>
+                  - Conhecimentos básicos da linguagem de programação ADVPL.
+                  <br>
+                  - Gerenciamento e manuseio de base de dados com mysql e Microsoft SQL Manager.
+                  <br>
+                  - Iniciativa para utilização de Orientação a objetos e seus Design Patterns.
+                  <br>
+                  - Utilização de padrões de arquitetura MVC, junto de boas práticas de software.
+                </p>
+              </div>
+              <div name="subtitle" *ngIf="activeStep == 2">
+                <h4 class="title">Apollo Gestão Empreendedora</h4>
+                <p>
+                  Organização patrimonial de empresas de capital aberto e capital fechado.
+                  <br>
+                  - Gestão de bases e balancetes patrimonias.
+                  <br>
+                  - Controle de ativo imobilizado e centros de custos.
+                  <br>
+                  - Controle de equipamentos de informatica da empresa.
+                  <br>
+                  - Desenvolvimento de apps e programas para uso profissional da empresa, usando as linguagens: Flutter,
+                  Python, SQL e JavaScript.
+                </p>
+              </div>
+              <div name="subtitle" *ngIf="activeStep == 3">
+                <h4 class="title">Godman Game Studio</h4>
+                <p>
+                  - Fundador de uma empresa de criação de jogos mobile.
+                  <br>
+                  - Programação de mecanicas de jogabilidade, utilizando-se a linguagem C# e a engine Unity.
+                  <br>
+                  - Direção de arte.
+                  <br>
+                  - Contato com publishers.
+                  <br>
+                  - Gestor de trafego pago e marketing.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="projects">
+      <header>
+        <h1 class="section-title">Projetos</h1>
+      </header>
+      <div class="container">
+        <div class="listProjects">
+          <div class="projectItem">
+            <div class="project-info">
+              <img class="projectPhoto"
+                src="https://play-lh.googleusercontent.com/BD-Q7HayFfpTovnguxp3iOnZkKGkgQESeZpaqzQj1AeJ1CAXNIkn7q7LeWaP75IuS_RI=w526-h296-rw">
+              <h4 class="title">Castle Shoot</h4>
+              <p>
+                Castle Shoot é um jogo mobile desenvolvido com a linguagem de programação C++ junto do framework Unity.
+                <br>
+                Atualmente Castle Shoot conta com 100 downloads na playtore em mais de 20 paises diferentes.
+            </div>
+            <div class="project-button">
+              <po-button p-label="Ver mais" p-kind="primary" class="po-md-12"></po-button>
+            </div>
+          </div>
+          <div class="projectItem">
+            <img class="projectPhoto"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXoWem2ixQOJol5e6yyhBiJGfzbozqKu7jyg&usqp=CAU">
+            <h4 class="title">Github</h4>
+            <p>
+              Embora eu ainda tenha poucos projetos publicados oficialmente, sempre tenho algo novo e diferente
+              desenvolvido em meu github.
+            </p>
+            <po-button p-label="Ver mais" p-kind="primary" class="po-md-12"></po-button>
+          </div>
+          <div class="projectItem">
+            <img class="projectPhoto"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSwaC8Ka0-BHRCmJ13wiCIBaTcYT3RfxIn0i5k3a5DXMA4afz8QLETk-Bvg-i-59-i4gg&usqp=CAU">
+            <h4 class="title">Em breve</h4>
+            <p>
+              Castle Shoot follows the journey of a brave warrior who must fight hordes of enemies as she explores every
+              corner of the imposing castle. The player will have to use accurate shooting skills and cunning to defeat
+            </p>
+            <po-button p-label="Ver mais" p-kind="primary" class="po-md-12"></po-button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="contact-section">
+      <header>
+        <h1 class="section-title">Contatos</h1>
+      </header>
+      <div class="container">
+        <div class="emailContent">
+          <h2 class="title">
+            Email
+          </h2>
+          <h2 class="subtitle">
+            danielmatiascaxiasdosul@gmail.com
+          </h2>
+        </div>
+        <div class="emailContent">
+          <h2 class="title">
+            Whatsapp
+          </h2>
+          <h2 class="subtitle">
+            (054)99192-2772
+          </h2>
+        </div>
+        <div class="social-media-buttons">
+          <div>
+            <button class="linkedin-button"
+              onclick="window.open('//www.linkedin.com/in/carlos-daniel-matias-simon-4446a21a7/','_blank')">
+              <i class="fa-brands fa-linkedin-in"></i>
+              <span>linkedin</span>
+            </button>
+          </div>
+          <div>
+            <button class="github-button" onclick="window.open('//github.com/matiasdanielz','_blank')">
+              <i class="fa-brands fa-github"></i>
+              <span>Github</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
